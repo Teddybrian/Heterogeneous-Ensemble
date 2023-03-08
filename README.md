@@ -5,7 +5,7 @@ Varius libraries are uploaded inclusive of pandas, RandomForestClassifier, Votin
 Dataset is first loaded and checked for missing values; in this case, no missing values are identified for both datasets.
 Dataset is the preprocesssed by removing unwanted columns, in this case CustomerId in churn and children in insurance, because it plays no significant role in the analysis of the data. 
 Data is the split in to test and training sets under the 0.2 test fraction
-A homogenous ensemble random forest classifier is created by creating a base classifier;
+A heterogenous ensemble random forest classifier is created by creating a base classifier;
 rf1 = RandomForestClassifier(n_estimators = 50, random_state = 42)
 dt = DecisionTreeClassifier(max_depth = 5, random_state = 42)
 lr = LogisticRegression(random_state = 42)
